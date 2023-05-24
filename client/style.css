@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,500&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,500;0,700;1,700&display=swap");
+
+.parent {
+  /* background-color: rgba(137, 43, 226, 0.5); */
+  background-image: url(./images/2314950.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  background-color: white;
+  height: 600px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.login h1 {
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.username p::before {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+  font-size: smaller;
+  content: " *";
+  color: red;
+}
+.username input {
+  width: 85%;
+  /* border-radius: 5px; */
+  padding: 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.username {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.password p::before {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+  font-size: smaller;
+  content: " *";
+  color: red;
+}
+.password {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.password input {
+  width: 85%;
+  /* border-radius: 5px; */
+  padding: 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.forgot {
+  display: flex;
+  justify-content: end;
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn button {
+  width: 300px;
+  padding: 9px 15px;
+  /* color: white; */
+
+  background: rgb(102, 115, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(102, 115, 180, 1) 0%,
+    rgba(66, 30, 207, 1) 73%,
+    rgba(110, 62, 71, 1) 100%
+  );
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  /* margin-left: 30px; */
+}
+.btn p {
+  color: white;
+  font-size: 15px;
+}
+
+#others {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.others {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newaccount {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  margin-bottom: 10px;
+}
+.newaccount:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.email_error{
+  color: red;
+}

@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400;1,500&family=Roboto+Mono:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,100;0,500;0,700;1,700&display=swap");
+
+.parent {
+  /* background-color: blue; */
+  background-image: url(./images/2314950.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.child {
+  background-color: white;
+  height: 400px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.child h1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.username {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.username input {
+  width: 85%;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.username::before {
+  content: " *";
+  color: red;
+}
+
+.email {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.email input {
+  width: 85%;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.email::before {
+  content: " *";
+  color: red;
+}
+
+.password {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.password input {
+  width: 85%;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.password::before {
+  content: " *";
+  color: red;
+}
+
+.confirm {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.confirm input {
+  width: 85%;
+  padding: 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+.confirm::before {
+  content: " *";
+  color: red;
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.create button {
+  width: 300px;
+  padding: 9px 15px;
+  background: rgb(102, 115, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(102, 115, 180, 1) 0%,
+    rgba(66, 30, 207, 1) 73%,
+    rgba(110, 62, 71, 1) 100%
+  );
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.create p {
+  color: white;
+  font-size: 15px;
+}
+.signin {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  margin-bottom: 10px;
+}
+.signin:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
