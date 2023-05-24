@@ -14,9 +14,13 @@ const validate_email = (email) => {
   if (email.match(mailformat)) {
     const valid_email = "Valid email address";
     emailErr.textContent = valid_email;
+    emailErr.classList.add("valid");
+    emailErr.classList.remove("invalid");
   } else {
     const invalid_email = "Invalid Email address";
     emailErr.textContent = invalid_email;
+    emailErr.classList.add("invalid");
+    emailErr.classList.remove("valid");
   }
 };
 
@@ -26,11 +30,16 @@ const validate_pass = (password) => {
 
   if (password.match(passFormat)) {
     const valid_pass = "Valid Password";
+    // passwordErr.classList.toggle('col')
     passwordErr.textContent = valid_pass;
+    passwordErr.classList.add("valid");
+    passwordErr.classList.remove("invalid");
   } else {
     const invalid_pass =
       "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number, and one special character.";
     passwordErr.textContent = invalid_pass; // Update the error message
+    passwordErr.classList.add("invalid");
+    passwordErr.classList.remove("valid");
   }
 };
 

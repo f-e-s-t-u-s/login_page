@@ -142,6 +142,16 @@
   cursor: pointer;
 }
 
-.email_error{
+.email_error, .pass_error{
+  color: red;
+  display: flex;
+  text-align: center;
+}
+
+.pass_error.valid, .email_error.valid{
+  color: green;
+}
+.pass_error.invalid, .email_error.invalid{
   color: red;
 }
+
